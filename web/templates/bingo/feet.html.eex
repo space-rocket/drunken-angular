@@ -1,0 +1,4 @@
+<script type="text/javascript">
+  var elmDiv = document.getElementById('elm-app-goes-here');
+  Elm.embed(Elm.Bingo, elmDiv);
+</script>

@@ -1,0 +1,9 @@
+<div class="container theme-showcase" role="main">
+  <div class="jumbotron">
+    <h2>Bingo! Bingo! Bingo!</h2>
+    <p class="lead">A demo bingo app using Elm.</p>
+  </div>
+
+  <div class="row marketing" id="elm-app-goes-here"></div>
+  </div>
+</div>

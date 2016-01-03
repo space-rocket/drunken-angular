@@ -1,0 +1,54 @@
+<script type="text/javascript" src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<div class="container theme-showcase" role="main">
+  <div class="jumbotron">
+    <h2>Sign Up</h2>
+    <p class="lead">...And get real. Yo</p>
+  </div>
+  <div class="row marketing">
+    <form id="jq-signup-form" class="col-md-3 center-block">
+      <fieldset>
+        <div class="form-group">
+          <label class="control-label">Username</label>
+          <input id="txt-register-username" class="form-control" type="text" name="username">
+          <span class="validation-error"></span>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Email</label>
+          <input id="txt-register-email" class="form-control" type="text" name="email">
+          <span class="validation-error"></span>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Password</label>
+          <input id="txt-register-password" class="form-control" type="password" name="password">
+          <span class="validation-error"></span>
+        </div>
+        <div class="form-group">
+          <div id="btn-register" class="btn btn-primary pull-right">Sign Up!</div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <div id="main" class="row marketing"></div>
+  </div>
+</div>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#btn-register').click(function() {
+      var email = $('#txt-register-email').val();
+      var username = $('#txt-register-username').val();
+      var password = $('#txt-register-password').val();
+
+      $.post('/register', {
+        email: email,
+        password: password,
+        username: username
+      })
+      .then(function(data) {
+        alert(data.message);
+      })
+      .fail(function(data) {
+        alert(data.message);
+      })
+    });
+  });
+</script>

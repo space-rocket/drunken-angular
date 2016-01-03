@@ -1,0 +1,15 @@
+<!-- 1. Load libraries -->
+<script src="<%= static_path(@conn, "/js/angular-build.js") %>"></script>
+<!-- 2. Configure SystemJS -->
+<script>
+  System.config({
+    packages: {        
+      js: {
+        format: 'register',
+        defaultExtension: 'js'
+      }
+    }
+  });
+  System.import('js/boot')
+        .then(null, console.error.bind(console));
+</script>

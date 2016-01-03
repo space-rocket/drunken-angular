@@ -1,0 +1,346 @@
+// ====================================================
+// Table of Contents
+// ====================================================
+// Scaffolding
+// Utilities
+// Typography
+// Header
+// Navigation
+// Logo
+// Footer
+// Forms
+// Buttons
+// Alerts
+// Deprecating
+
+
+// ====================================================
+// Scaffolding
+// ====================================================
+
+// ====================================================
+// Utilities
+// ====================================================
+.center-block {
+    float: none;
+}
+// ====================================================
+// Typography
+// ====================================================
+ul {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+  text-align: left;
+}
+
+li {
+  background: #61a1bc;
+  background: #fff;
+  height: auto;
+  position: relative;
+  padding: 15px 30px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+li:hover {
+  background: #fcfcfc;
+  /* background: #61a1bc; */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+li.total {
+    background: transparent none repeat scroll 0 0;
+    box-shadow: none;
+    color: #61a1bc;
+    display: table;
+    position: relative;
+    width: 100%;
+}
+
+li.total .label {
+    border-radius: 0;
+    color: #61a1bc;
+    display: block;
+    font-size: 100%;
+    font-weight: bold;
+    line-height: unset;
+    padding: 0.2em 0.6em 0.3em;
+    text-align: right;
+    vertical-align: baseline;
+    white-space: nowrap;
+    width: auto;
+}
+
+li .phrase {
+    position: relative;
+}
+
+li .points {
+    float: right;
+    margin-right: 10px;
+    position: relative;
+}
+
+li .label {
+    position: relative;
+}
+
+li.highlight {
+  background: #61a1bc;
+}
+
+li .delete {
+  display: none;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+li .delete:after {
+  content: '✖';
+  color: #e35885;
+}
+
+li:hover .delete {
+  display: block;
+}
+
+li .delete:hover {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px dashed #c5c5c5;
+}
+
+// Custom Core Styles
+ul li i {
+    margin-right: 40px;
+}
+
+// ====================================================
+// Header
+// ====================================================
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+// ====================================================
+// Navigation
+// ====================================================
+.navbar-nav > li  {
+  margin: 0;
+  padding: 0;
+}
+.navbar-nav > li > a {
+    padding: 30px 45px;
+}
+
+// ====================================================
+// Logo
+// ====================================================
+.logo {
+    display: inline-block;
+    height: 80px;
+    margin-right: 8px;
+    width: 80px;
+}
+// ====================================================
+// Footer
+// ====================================================
+footer {
+  border-top: 1px solid #a6a6a6;
+  color: #a6a6a6;
+  margin: 50px auto 10px;
+  padding-top: 10px;
+  font-size: 12px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+  text-align: center;
+  line-height: 1em;
+}
+
+footer a {
+  color: inherit;
+}
+// ====================================================
+// Forms
+// ====================================================
+/* Phoenix inline forms in links and buttons */
+form.link, form.button {
+  display: inline;
+}
+form {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+input[type="text"], 
+input[type="number"], 
+input.form-control[type="text"], 
+input.form-control[type="number"],
+input.form-control[type="password"] {
+    background: rgba(0, 0, 0, 0.02) none repeat scroll 0 0;
+    border: 1px dashed #c5c5c5;
+    box-sizing: border-box;
+    color: #797b74;
+    margin: 0 5px;
+    outline: medium none;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border: 1px dashed #61a1bc;
+  outline: 0;
+  transition: border-color 0.3s ease-in;
+}
+// ====================================================
+// Buttons
+// ====================================================
+.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .btn {
+    border: medium none;
+    border-radius: 4px;
+    font-size: 14px;
+    letter-spacing: 0.27rem;
+    line-height: 1.33333;
+    padding: 20px 15px;
+    text-transform: uppercase;
+}
+button.sort {
+  background: #d9d9d9 none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 4px;
+  color: #5e6163;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: 40px;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  padding: 5px 15px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button.sort:hover {
+  opacity: 0.75;
+}
+
+button.add {
+  border: 0;
+  height: 55px;
+  vertical-align: top;
+  width: 75px;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: #fff;
+  background: #61a1bc;
+  color: #5e6163;
+  background: #D9D9D9;
+}
+
+button.add:hover {
+  opacity: 0.75;
+}
+
+button.delete {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  vertical-align: baseline;
+  font-family: inherit;
+  color: inherit;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+button {
+  outline: none;
+  font-size: 100%;
+}
+// ====================================================
+// Alerts
+// ====================================================
+/* Phoenix flash messages */
+.alert:empty { display: none; }
+
+// ====================================================
+// Deprecating
+// ====================================================
+/* Space out content a bit */
+// form, ul, table {
+//   margin-top: 20px;
+//   margin-bottom: 20px;
+// }
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+// .header,
+// .marketing {
+//   padding-right: 15px;
+//   padding-left: 15px;
+// }
+
+
+// body {
+//   background: #eaeaea;
+//   color: #4f4f4f;
+//   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+//   line-height: 1.4em;
+// }
+
+// #container {
+//   width: 600px;
+//   margin: 50px auto;
+//   padding: 0px 50px;
+// }
+
+// h1, h2 {
+//   text-align: center;
+// }
+
+// h1 {
+//   font-size: 30px;
+//   margin: 0 0 25px 0;
+//   color: #61a1bc;
+// }
+
+// h2 {
+//   font-size: 25px;
+//   margin: 30px 0 0 0;
+//   color: #797B74;
+// }
+
+// header {
+//   margin: 0;
+//   padding: 0;
+//   text-align: center;
+// }
+
+
+
+
+
+
+

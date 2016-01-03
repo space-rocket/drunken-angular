@@ -1,0 +1,4 @@
+<script type="text/javascript">
+  var elmDiv = document.getElementById('main');
+  Elm.embed(Elm.SignUpForm, elmDiv);
+</script>

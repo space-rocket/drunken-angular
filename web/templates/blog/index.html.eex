@@ -1,0 +1,8 @@
+<div class="container theme-showcase" role="main">
+  <div class="jumbotron">
+    <h2>Blog Posts (This is going to be the angular2 page)</h2>
+    <p class="lead">Latest insights from research and developement at DrunkenAngular labs.</p>
+  </div>
+  <my-app class="row marketing">Loading...</my-app>
+  </div>
+</div>
