@@ -3,7 +3,7 @@
 Getting Started
 ---------------
 
-The first thing you want to do is copy the `drunken-elmo` directory and change the name to something else (like, say, `my-awesome-app`), and then you'll need to do a three-step find and replace on the name in all the templates.
+The first thing you want to do is copy the `drunken-angular` directory and change the name to something else (like, say, `my-awesome-app`), and then you'll need to do a three-step find and replace on the name in all the templates.
 
 1. Search for `drunken_angular` to capture the configs.
 2. Search for `DrunkenAngular` to capture all the function names.

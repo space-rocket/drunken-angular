@@ -2,7 +2,7 @@
 <div class="container theme-showcase" role="main">
   <div class="jumbotron">
     <h2>Drunken Angular</h2>
-    <p class="lead">Elixir and Elm boilerplate. Built for speed, concurrency and reactiveness.</p>
+    <p class="lead">Elixir and Angular Fullstack Boilerplate. Built for speed, concurrency and reactiveness.</p>
   </div>
   <div class="row marketing">
     <div class="col-lg-6">
