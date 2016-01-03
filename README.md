@@ -10,7 +10,7 @@ The first thing you want to do is copy the `drunken-elmo` directory and change t
 3. Search for `Drunken Angular` to capture all static text.
 
 OR
-
+* Search for: `drunken-angular` and replace with: `my-awesome-app`.
 * Search for: `drunken_angular` and replace with: `my_awesome_app`.
 * Search for: `DrunkenAngular` and replace with: `MyAwesomeApp`.
 * Search for: `Drunken Angular` and replace with: `My Awesome App`.
@@ -20,7 +20,7 @@ Inside /lib folder, rename drunken_angular to my_awesome_app and in the same fol
 
 Next, update or delete this readme.
 
-Now you're ready to go! May the Elm and Elixir be with you :)
+Now you're ready to go! May the Angular and Elixir be with you :)
 
 Good luck!
 
@@ -28,9 +28,8 @@ To start your Phoenix app:
 
   1. Clean out artifact dependencies and install fresh dependencies `rm -rf _build deps mix.lock && mix deps.clean --unused && mix deps.get`
   2. Create and migrate your database with `mix ecto.create && mix ecto.migrate`
-  3. Install npm packages `npm install && elm package install`
-  4. Compile Sass and JavaScript files `gulp build`
-  5. Start Phoenix endpoint with `mix phoenix.server`
+  3. Install npm packages `npm install`
+  4. Compile Sass and Typescript files and launch the phoenix server `npm start`.
 
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
