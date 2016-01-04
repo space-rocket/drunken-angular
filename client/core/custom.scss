@@ -143,6 +143,11 @@ ul li i {
 // ====================================================
 // Navigation
 // ====================================================
+.navbar-default {
+    background-color: #36474f;
+    border-color: #e7e7e7;
+    border-radius: 0;
+}
 .navbar-nav > li  {
   margin: 0;
   padding: 0;
@@ -155,11 +160,19 @@ ul li i {
 // Logo
 // ====================================================
 .logo {
-    display: inline-block;
-    height: 80px;
+    display: table;
+    height: auto;
     margin-right: 8px;
-    width: 80px;
+    vertical-align: middle;
+    width: 70px;
 }
+.logo img {
+    display: table;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+}
+
 // ====================================================
 // Footer
 // ====================================================
