@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     del = require('del'),
     Config = require('./gulpfile.config'),
-    tsProject = tsc.createProject('src/tsconfig.json'),
+    tsProject = tsc.createProject('client/tsconfig.json'),
     browserSync = require('browser-sync'),
     superstatic = require( 'superstatic' );
 
