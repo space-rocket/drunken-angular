@@ -2,7 +2,7 @@
 <div class="container theme-showcase" role="main">
   <div class="jumbotron">
     <h2>Drunken Angular</h2>
-    <p class="lead">Phoenix/Elixir/Erlang and Angular Fullstack Boilerplate. Built for speed, concurrency and reactiveness.</p>
+    <p class="lead">Phoenix/Elixir/Erlang and Angular 2 Fullstack Boilerplate. Built for speed, concurrency and reactiveness.</p>
   </div>
   <div class="row marketing">
 

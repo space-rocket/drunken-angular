@@ -10,6 +10,6 @@
       }
     }
   });
-  System.import('js/boot')
+  System.import('js/core/boot')
         .then(null, console.error.bind(console));
 </script>
