@@ -13,7 +13,7 @@ Gulp.task('watch', function () {
     Gulp.watch('./client/*/*/*.scss', ['sass']);
 
     Gulp.watch('./*.ts', ['compile-ts']);
-    Gulp.watch('./src/*.ts', ['compile-ts']);
-    Gulp.watch('./src/*/*.ts', ['compile-ts']);
-    Gulp.watch('./src/*/*/*.ts', ['compile-ts']);
+    Gulp.watch('./**/*.ts', ['compile-ts']);
+    Gulp.watch('./**/*/*.ts', ['compile-ts']);
+    Gulp.watch('./**/*/*/*.ts', ['compile-ts']);
 });
