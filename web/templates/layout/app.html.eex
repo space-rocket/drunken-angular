@@ -54,7 +54,6 @@
         <a href="http://www.space-rocket.com">Space Rocket | Web & Graphic Design</a>
       </div>
     </footer>
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
     <%= render_existing view_module(@conn), "feet.html", assigns %>
   </body>
 </html>
