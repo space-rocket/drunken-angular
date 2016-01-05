@@ -11,6 +11,7 @@
 // Forms
 // Buttons
 // Alerts
+// My Post Detail
 // Deprecating
 
 
@@ -299,6 +300,19 @@ button {
 /* Phoenix flash messages */
 .alert:empty { display: none; }
 
+// ====================================================
+// My Post Detail
+// ====================================================
+my-post-detail {
+  background: #fff none repeat scroll 0 0;
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  position: relative;
+  text-align: left;
+}
 // ====================================================
 // Deprecating
 // ====================================================

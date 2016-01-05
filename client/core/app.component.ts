@@ -1,28 +1,39 @@
-import {Component} from 'angular2/core';
-
-interface Post {
-  id: number;
-  title: string;
-}
+import {Component, OnInit} from 'angular2/core';
+import {Post} from './post';
+import {PostDetailComponent} from './post-detail.component';
+import {PostService} from './post.service';
 
 @Component({
   selector: 'my-app',
-  template: `
-    <h1>{{title}}</h1>
-    <h2>{{post.title}} details!</h2>
-    <div>
-    	<label>id: </label>{{post.id}}
-    </div>
-    <form>
-      <label>title: </label>
-      <input [(ngModel)]="post.title" placeholder="title">
-    </form>
-    `
+  template:`
+    <div class="row">
+	    <ul class="posts col-md-4">
+	      <li *ngFor="#post of posts"
+	        [class.selected]="post === selectedPost"
+	        (click)="onSelect(post)">
+	        <span class="badge">{{post.id}}</span> {{post.name}}
+	      </li>
+	    </ul>
+	    <my-post-detail class="col-md-8" [post]="selectedPost"></my-post-detail>
+	  </div>
+  `,
+  directives: [PostDetailComponent],
+  providers: [PostService]
 })
-export class AppComponent {
-  public title = 'Blog Posts';
-  public post: Post = {
-    id: 1,
-    title: 'Hello World'
-  };
+export class AppComponent implements OnInit {
+	public title = 'Blog Posts';
+  public posts: Post[];
+  public selectedPost: Post;
+
+  constructor(private _postService: PostService) { }
+
+  getPosts() {
+    this._postService.getPosts().then(posts => this.posts = posts);
+  }
+
+  ngOnInit() {
+    this.getPosts();
+  }
+
+  onSelect(post: Post) { this.selectedPost = post; }
 }
