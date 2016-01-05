@@ -11,7 +11,7 @@ export class PostService {
   // See the "Take it slow" appendix
   getPostsSlowly() {
     return new Promise<Post[]>(resolve =>
-      setTimeout(()=>resolve(POSTS), 2000) // 2 seconds
+      setTimeout(()=>resolve(POSTS), 0) // 0 seconds
     );
   }
 }
