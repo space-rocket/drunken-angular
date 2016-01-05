@@ -12,6 +12,8 @@
 // Buttons
 // Alerts
 // My Post Detail
+// Posts
+// Media Quiries
 // Deprecating
 
 
@@ -39,7 +41,6 @@ ul {
 }
 
 li {
-  background: #61a1bc;
   background: #fff;
   height: auto;
   position: relative;
@@ -305,6 +306,8 @@ button {
 // ====================================================
 my-post-detail {
   background: #fff none repeat scroll 0 0;
+  border: 1px solid #eaeaea; // Hides the empty div into background color. Todo: Make a variable so don't have to change in two places if changing the background color.
+  display: inline-block;
   margin: 20px 0;
   padding: 0;
   list-style: none;
@@ -313,61 +316,22 @@ my-post-detail {
   position: relative;
   text-align: left;
 }
+my-post-detail {
+
+}
+// ====================================================
+// Posts
+// ====================================================
+ul.posts {
+    padding-left: 0;
+}
 // ====================================================
 // Deprecating
 // ====================================================
-/* Space out content a bit */
-// form, ul, table {
-//   margin-top: 20px;
-//   margin-bottom: 20px;
-// }
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-// .header,
-// .marketing {
-//   padding-right: 15px;
-//   padding-left: 15px;
-// }
-
-
-// body {
-//   background: #eaeaea;
-//   color: #4f4f4f;
-//   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
-//   line-height: 1.4em;
-// }
-
-// #container {
-//   width: 600px;
-//   margin: 50px auto;
-//   padding: 0px 50px;
-// }
-
-// h1, h2 {
-//   text-align: center;
-// }
-
-// h1 {
-//   font-size: 30px;
-//   margin: 0 0 25px 0;
-//   color: #61a1bc;
-// }
-
-// h2 {
-//   font-size: 25px;
-//   margin: 30px 0 0 0;
-//   color: #797B74;
-// }
-
-// header {
-//   margin: 0;
-//   padding: 0;
-//   text-align: center;
-// }
 
 
 
-
-
-
+// ====================================================
+// Media Quiries
+// ====================================================
 

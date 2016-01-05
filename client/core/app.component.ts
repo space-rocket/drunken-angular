@@ -6,7 +6,6 @@ import {PostService} from './post.service';
 @Component({
   selector: 'my-app',
   template:`
-    <div class="row">
 	    <ul class="posts col-md-4">
 	      <li *ngFor="#post of posts"
 	        [class.selected]="post === selectedPost"
@@ -15,7 +14,6 @@ import {PostService} from './post.service';
 	      </li>
 	    </ul>
 	    <my-post-detail class="col-md-8" [post]="selectedPost"></my-post-detail>
-	  </div>
   `,
   directives: [PostDetailComponent],
   providers: [PostService]
