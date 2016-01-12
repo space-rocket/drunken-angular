@@ -1,7 +1,7 @@
 import {Component, OnInit} from 'angular2/core';
-import {Post} from './post';
-import {PostDetailComponent} from './post-detail.component';
-import {PostService} from './post.service';
+import {Post} from './posts/post';
+import {PostDetailComponent} from './posts/post-detail.component';
+import {PostService} from './posts/post.service';
 
 @Component({
   selector: 'my-app',
